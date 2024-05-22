@@ -41,7 +41,7 @@ const categoryBtns = document.querySelectorAll('.category-btn');
 
 const fetchIngredients = (meal) =>{
     let ingredientsList = ''
-    for(let i = 1; i <= 20; i++){
+    for(let i = 1; i <= 25; i++){
         const ingredient = meal[`strIngredient${i}`]
         if(ingredient){
             const measure = meal[`strMeasure${i}`]
