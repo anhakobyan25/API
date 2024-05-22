@@ -8,12 +8,12 @@
 
 body
 {
-    background: linear-gradient(-1000deg, #7aa4f7e1, rgba(209, 68, 248, 0.886));
+    background: linear-gradient(-1000deg, #7aa4f7e6, rgba(209, 68, 248, 0.886));
     color:white;
    
 }
 
-header nav
+.nav
 {
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.35);
@@ -24,14 +24,14 @@ header nav
     z-index: 1;
 }
  
-header nav h1
+.nav h1
 {
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
-header nav form
+.form
 {
     width: 80%;
     display: flex;
@@ -39,13 +39,13 @@ header nav form
     margin-top: 20px;
 }
 
-form input[type='text']
+.form input[type='text']
 {
     flex-grow: 1;
     margin-right: 10px;
 }
 
-form input[type='text'],
+.form input[type='text'],
  button[type='submit']
 {
     border: none;
@@ -54,7 +54,7 @@ form input[type='text'],
     border-radius: 4px;
 }
 
-form button[type='submit']
+.form button[type='submit']
 {
     border:none;
     background-color: rgb(102, 102, 252);
@@ -62,7 +62,7 @@ form button[type='submit']
     cursor: pointer;
 }
 
-form button[type='submit']:hover, 
+.form button[type='submit']:hover, 
 .recipe button:hover,
 .recipe-close-btn:hover
 {
@@ -137,7 +137,7 @@ form button[type='submit']:hover,
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    background-color:rgba(61, 60, 60, 0.542);
+    background-color:rgba(202, 81, 235, 0.886);
     border-radius: 12px;
     width: 40%; 
     height: 40%; 
