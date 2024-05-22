@@ -79,24 +79,3 @@ searchBtn.addEventListener('click',(e)=>{
     
 });
 
-
-
-
-
-// const foo = value => (value % 2 == 1 ? value + 1 : value - 1); // 
-// const bar = (value) => {
-// if (value % 4 === 0) throw 4;
-// return new Promise((resolve) => setTimeout(() => resolve(value / 2)));
-// }
-// Promise.resolve(3)
-// .then(foo)
-// .then(bar)
-// .catch(bar)
-// .catch(foo)
-// .then(bar)
-// .then((value) => {
-// console.log('Resolved:', value);
-// })
-// .catch((value) => {
-// console.log('Rejected:', value);
-// })
