@@ -12,6 +12,7 @@ const fetchReciepes = async (query)=>{
 
     recipeContainer.innerHTML= '';
     response.meals.forEach(meal  => {
+        if(meal.strArea !== 'Turkish'){
         const recipeDiv = document.createElement('div')
         recipeDiv.classList.add('recipe');
         recipeDiv.innerHTML = `
@@ -29,6 +30,7 @@ const fetchReciepes = async (query)=>{
             openRecioePopup(meal);
         })
         recipeContainer.appendChild(recipeDiv);
+        }
     })
     } catch(error){
         recipeContainer.innerHTML= '<h2>Error in fetching recipes...</h2>';
@@ -68,14 +70,22 @@ recipeCloseBtn.addEventListener('click', ()=>{
     recipeDetalisContent.parentElement.style.display ='none'
 })
 
-searchBtn.addEventListener('click',(e)=>{
+
+
+const handleSearch = (e) => {
     e.preventDefault();
     const searchInput = searchRecipes.value.trim();
-    if(!searchInput){
-        recipeContainer.innerHTML= `<h2>Type the meal in the search box.</h2>`
+    if (!searchInput) {
+        recipeContainer.innerHTML = `<h2>Type the meal in the search box.</h2>`;
         return;
     }
-    fetchReciepes(searchInput)
-    
-});
+    fetchReciepes(searchInput);
+};
 
+searchBtn.addEventListener('click', handleSearch);
+
+searchRecipes.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        handleSearch(e);
+    }
+});
