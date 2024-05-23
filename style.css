@@ -3,14 +3,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
     
 }
-
-body
-{
-    background: linear-gradient(-1000deg, #7aa4f7e6, rgba(209, 68, 248, 0.886));
-    color:white;
-   
+body {
+    background:  url('gettyimages-1179272859_bea.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    margin: 0;
 }
 
 .nav
@@ -83,7 +84,7 @@ body
  .recipe 
  {
     margin: 20px; 
-    background-color: rgba(0, 0, 0, 0.204);
+    background-color: rgba(112, 187, 185, 0.886);
     display: flex;
     flex-direction: column;
     color:white;
@@ -124,7 +125,7 @@ body
     border-radius:5px;
     border: none;
     cursor: pointer;
-    background-color: rgb(102, 102, 252);
+    background-color: rgba(102, 102, 252, 0.867);
     color: white;
 
 }
@@ -137,7 +138,7 @@ body
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    background-color:rgba(202, 81, 235, 0.886);
+    background-color:rgba(112, 187, 185, 0.886);
     border-radius: 12px;
     width: 40%; 
     height: 40%; 
