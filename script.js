@@ -3,7 +3,7 @@ const searchBtn = document.querySelector('.searchBtn');
 const recipeContainer = document.querySelector('.recipe_container');
 const recipeDetalisContent = document.querySelector('.recipe-detalis-content');
 const recipeCloseBtn= document.querySelector('.recipe-close-btn');
-
+const body = document.querySelector('body')
 
 const fetchReciepes = async (query)=>{
     try{
@@ -32,6 +32,10 @@ const fetchReciepes = async (query)=>{
         recipeContainer.appendChild(recipeDiv);
         }
     })
+        body.style.background = 'linear-gradient(-1000deg, #b9fff486,rgba(141, 231, 234, 0.502)), url("1\ PJkl6Zv9lMWWBiuoixWA3Q.jpg")';
+        body.style.backgroundSize = 'cover';
+        body.style.backgroundAttachment = 'fixed';
+        body.style.color = 'white';
     } catch(error){
         recipeContainer.innerHTML= '<h2>Error in fetching recipes...</h2>';
     }
